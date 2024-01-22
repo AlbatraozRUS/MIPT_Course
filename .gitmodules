@@ -1,0 +1,6 @@
+[submodule "First_Year/Compiler_x86_64"]
+	path = First_Year/Compiler_x86_64
+	url = https://github.com/AlbatraozRUS/Compiler_x86_64
+[submodule "First_Year/Jail_language"]
+	path = First_Year/Jail_language
+	url = https://github.com/AlbatraozRUS/Jail_language

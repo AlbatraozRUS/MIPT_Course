@@ -1,0 +1,91 @@
+in
+in
+in
+push cx
+push bx
+push ax
+pop ax
+push 0
+Eq Next
+pop bx
+pop bx
+Mul
+push 4
+pop ax
+pop cx
+mul
+mul
+sub
+push dx
+Pop dx
+push 0
+Eq Four
+Pop dx
+Push 0
+Ja Five
+Pop dx
+Push 0
+Jb Six
+Next:
+pop bx
+push 0
+Eq Two
+pop cx
+Push -1
+Mul
+Pop bx
+div
+out
+jp Zero
+Two:
+pop cx
+push 0
+Eq Third
+Push -666
+out
+jp Zero
+Third:
+Push 666
+out
+jp Zero
+Four:
+pop bx
+push -1
+mul
+push 2
+pop ax
+mul
+div
+out
+jp Zero
+Five:
+Push -666
+Out
+Jp Zero
+Six:
+Pop dx
+Sqrt
+Push dx
+Pop bx
+Push -1
+Mul
+Pop dx
+Add
+Push 2
+Div
+Pop ax
+Div
+Out
+Pop bx
+Push -1
+Mul
+Pop dx
+Sub
+Push 2
+Div
+Pop ax
+Div
+Out
+Jp Zero
+Zero:
+end

@@ -1,0 +1,30 @@
+Push 1
+Push ax
+Push 1
+Push bx
+Push 2
+Push cx
+In
+Push dx
+Again:
+Call Fib
+Pop cx
+Pop dx
+Eq Final
+Jp Again
+Fib:
+Pop ax
+Pop bx
+Add
+Pop bx
+Push ax
+Push bx
+Push 1
+Pop cx
+Add
+Push cx
+Ret
+Final:
+Pop bx
+Out
+End

@@ -1,0 +1,31 @@
+In
+Push dx
+Push 1
+Push cx
+Push 1
+Push ax
+Push 2
+Push bx
+Call Fac
+Jp Final
+Fac:
+Pop dx
+Pop cx
+Eq Final
+Pop ax
+Pop bx
+Mul
+Push ax
+Pop bx
+Push 1
+Add
+Push bx
+Pop cx
+Push 1
+Add
+Push cx
+Call Fac
+Final:
+Pop ax
+Out
+End
